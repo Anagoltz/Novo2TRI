@@ -53,6 +53,7 @@
 
 <section class="carrossel">
 <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
 <div class="swiper">
    <div class="swiper-pagination"></div>
    <div class="swiper-wrapper"></div>
@@ -74,38 +75,34 @@
 <div class="swiper-slide"><img src="img/Tuning.png" atl="Livro sobre Turning da AluraBooks"></div>
 <div class="swiper-slide"><img src="img/UX.png" atl="Livro sobre Ux da AluraBooks"></div>
 
-</div>
-<div class="swiper-pagination"></div>
-<div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
-<div class="swiper-scrollbar"></div>
-
 <div class="card">
-   <div class="card__discriçao">
-      <div class="descriçao">
+   <div class="card__discricao">
+      <div class="descricao">
          <h3 class="descricao_titulo">Talvez você também se interesse por...</h3>
          <H2 class="descricao_titulo-livro">Angular 11 e Firebase</H2>
          <p class="discricao_texto ">Construindo uma aplicação integrada com a plata forma do Google. </p>
       </div>
-      <img src="img/Angular.png" class="descricao__imagem">
+      <img src="img/Angular.svg" class="descricao__imagem">
    </div>
 </div>
 
 <div class="card__botoes">
    <ul class="botoes">
-      <li class="botoes_item"><img src="img/Favoritos.png" alt="Favoritar livros"></li>
-      <li class="botoes_item"><img src="img/Compras.png" alt="Adicionar no carrinho de compras"></li>
+      <li class="botoes_item"><img src="img/Favoritos.svg" alt="Favoritar livros"></li>
+      <li class="botoes_item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
    </ul> 
+   <a href="#" class="botoes_ancora">Saiba mais</a>
 </div>
 </section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script> const swiper = new Swiper('.swiper', {
-   speed: 400,
-   spaceBetween: 10, 
-   slidesPerView: 3, 
-   pagination:
-    {el: '.swiper-pagination',
+  <script>
+   const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 10, 
+    slidesPerView: 3, 
+    pagination: {
+   el: '.swiper-pagination',
    type: 'bullets',},});
 </script>
 
